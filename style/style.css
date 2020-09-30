@@ -23,6 +23,7 @@ h1{
 }
 
 h2{
+	font-family: 'Nunito Sans';
 	font-size: 24px;
 }
 
@@ -114,7 +115,7 @@ a:hover{
 	}
 	.titleMobile{
 		display: block;
-		padding-top: 20%;
+		padding-top: 30%;
 		margin: 0;
 		
 	}
