@@ -1,7 +1,3 @@
-/**************************************************/
-/* PLANT INTRODUCTION STYLESHEET*/
-/**************************************************/
-
 html body {
 	margin: 0px;
 	padding: 0px;
@@ -12,7 +8,7 @@ html body {
 .container {
 	overflow: hidden;
 	margin: 0px auto;
-	width: 1000px;
+	width: 75vw;
 }
 
 /*----------------------HEADER BAR---------------------------*/
@@ -20,15 +16,15 @@ html body {
 #header {
 	background: #ffffff;
 	position: relative;
-	padding: 50px;
+	padding: 3vw;
 }
 
 /*-----------------LOGO AND WEBSITE TITLE--------------------*/
 
 #logo {
 	position: absolute;
-	top: 2px;
-	left: 80px;
+	top: 0.25vh;
+	left: 6vw;
 	font-family: 'Nunito Sans', sans-serif;
 	text-transform: uppercase;
 	color:#4C7149;
@@ -37,16 +33,16 @@ html body {
 
 .logo-img {
 	position: absolute;
-	top: 22px;
-	left: 30px;
+	top: 3vh;
+	left: 2vw;
 }
 
 /*-------------------NAVIGATIONAL BAR------------------------*/
 
 #navbar {
 	position: absolute;
-	top: 25px;
-	right: 20px;
+	top: 2vh;
+	right: 2vw;
 }
 	
 #navbar ul {
@@ -60,20 +56,19 @@ html body {
 }
 	
 #navbar li a {
-	padding: 20px;
-	letter-spacing: 2px;
+	padding: 2vw;
+	letter-spacing: 0.25vw;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: 'Nunito Sans', sans-serif;
-	font-size: 18px;
+	font-size: 1.25vw;
 	color:#000000;
 	font-weight: 700;
 }
 	
 #navbar li:hover a {
-	background: #4C7149;
-	border-radius: 1px;
-	color: #000000;
+	text-decoration: underline;
+	color: #4C7149;
 }
 
 /*-------------PLANT INTRODUCTION HEADER IMAGE---------------*/
@@ -92,13 +87,13 @@ html body {
 	transform: translate(-50%, -50%);
 	color: #ffffff;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 59px;
+	font-size: 4vw;
 }
 
 /*------CONTENT ON THE LIGHT PAGES - TOOLS AND WATERING------*/
 
 #content-light {
-	padding: 70px;
+	padding: 10vw;
 	text-align: left;
 	color: #000000;
 }
@@ -117,7 +112,7 @@ html body {
 
 #content-dark {
 	overflow: hidden;
-	padding: 50px;
+	padding: 10vw;
 	background: #012416;
 	text-align: right;
 }
@@ -136,16 +131,16 @@ html body {
 
 .split-left {
 	width: 50%;
-	padding-top: 100px;
+	/* padding-top: 0vh; */
+	padding-right: 7vw;
 	float: left;
-	
+
 }
+
 .split-right {
 	width: 50%;
-	padding-top: 100px;
+	/* padding-top: 0vh; */
+	padding-left: 7vw;
 	float: right;
-	/* text-align: left; */ /* TO MAKE TEXT ALIGNED TO THE LEFT */
+	text-align: left;
 }
-/**************************************************/
-/* PLANT INTRODUCTION STYLESHEET END */
-/**************************************************/
