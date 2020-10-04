@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Plant Introduction</title>
+	<link href="../style/index.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!----------------HEADER AND NAVIGATIONAL BAR------------------>
+
+	<div id="header">
+		<div id="logo">
+			<h1>THE GREENHOUSE</h1>
+		</div>
+		<div class="logo-img">
+			<img src="images/logo.png" alt="" width="40" height="40"/>
+		</div>
+		<div id="navbar">
+			<ul>
+				<li><a href="introduction.html">INTRODUCTION</a></li>
+				<li><a href="plantIndex.html">PLANT INDEX</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-------------------------TITLE------------------------------->
+
+	<div class="header-image">
+		<img src="images/filler.jpg" style="width:100%;">
+		<div class="header-text">PLANT INDEX</div>
+	  </div>
+
+
+<center>
+<section class="body">
+
+<div class="header-index">PLANT INDEX</div>
+<center>
+
+
+<div class="grid-container">
+
+  <div>
+
+
+  	<h2>Blog 1</h2>
+    <button class="modal-button" ><img src="images/filler3.png" width="100%" href="#myModal1"></button></div>
+<!-- The Modal -->
+<div id="myModal1" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h3>First Blog Layout</h3>
+    </div>
+    <div class="modal-body">
+     <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>
+
+  <div><h2>Blog 2</h2>
+   <button class="modal-button" > <img src="images/filler3.png" width="100%" href="#myModal2"></button></div>
+   <!-- The Modal -->
+<div id="myModal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h3>Modal Header</h3>
+    </div>
+    <div class="modal-body">
+      
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>
+
+<div><h2>Blog 3</h2>
+   <button class="modal-button" > <img src="images/filler3.png" width="100%" href="#myModal3"></button></div>
+   <!-- The Modal -->
+<div id="myModal3" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h3>Modal Header</h3>
+    </div>
+    <div class="modal-body">
+      
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+</div>
+</center>
+
+</section>
+</center>
+
+
+
+<script type="text/javascript">
+  // Get the button that opens the modal
+var btn = document.querySelectorAll("button.modal-button");
+
+// All page modals
+var modals = document.querySelectorAll('.modal');
+
+// Get the <span> element that closes the modal
+var spans = document.getElementsByClassName("close");
+
+// When the user clicks the button, open the modal
+for (var i = 0; i < btn.length; i++) {
+ btn[i].onclick = function(e) {
+    e.preventDefault();
+    modal = document.querySelector(e.target.getAttribute("href"));
+    modal.style.display = "block";
+ }
+}
+
+// When the user clicks on <span> (x), close the modal
+for (var i = 0; i < spans.length; i++) {
+ spans[i].onclick = function() {
+    for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+    }
+ }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+     for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+     }
+    }
+}
+
+</script>
+</body>
+</html>

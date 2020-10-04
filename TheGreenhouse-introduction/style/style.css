@@ -1,0 +1,151 @@
+/**************************************************/
+/* PLANT INTRODUCTION STYLESHEET*/
+/**************************************************/
+
+html body {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*-----------SECTION THAT KEEPS EVERYTHING ALIGNED-----------*/
+
+.container {
+	overflow: hidden;
+	margin: 0px auto;
+	width: 1000px;
+}
+
+/*----------------------HEADER BAR---------------------------*/
+
+#header {
+	background: #ffffff;
+	position: relative;
+	padding: 50px;
+}
+
+/*-----------------LOGO AND WEBSITE TITLE--------------------*/
+
+#logo {
+	position: absolute;
+	top: 2px;
+	left: 80px;
+	font-family: 'Nunito Sans', sans-serif;
+	text-transform: uppercase;
+	color:#4C7149;
+	/* font-size: 16px; */
+}
+
+.logo-img {
+	/* position: absolute; */
+	top: 22px;
+	left: 30px;
+}
+
+/*-------------------NAVIGATIONAL BAR------------------------*/
+
+#navbar {
+	/* position: absolute; */
+	top: 25px;
+	right: 20px;
+}
+	
+#navbar ul {
+	display: inline-block;
+}
+	
+#navbar li {
+	display: block;
+	float: left;
+	text-align: center;
+}
+	
+#navbar li a {
+	padding: 20px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 18px;
+	color:#000000;
+	font-weight: 700;
+}
+	
+#navbar li:hover a {
+	background: #4C7149;
+	border-radius: 1px;
+	color: #000000;
+}
+
+/*-------------PLANT INTRODUCTION HEADER IMAGE---------------*/
+
+.header-image {
+	position: relative;
+	text-align: center;
+  }
+
+/*-----------HEADER TEXT ONTOP OF THE HEADER IMAGE-----------*/
+
+.header-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #ffffff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 59px;
+}
+
+/*------CONTENT ON THE LIGHT PAGES - TOOLS AND WATERING------*/
+
+#content-light {
+	padding: 70px;
+	text-align: left;
+	color: #000000;
+}
+
+#content-light h1 {
+	color: #000000;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#content-light p {
+	color: #000000;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+/*--CONTENT ON THE DARK PAGES - GENERAL TIPS AND BEGINNER PLANTS--*/
+
+#content-dark {
+	overflow: hidden;
+	padding: 50px;
+	background: #012416;
+	text-align: right;
+}
+
+#content-dark h1 {
+	color: #ffffff;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#content-dark p {
+	color: #ffffff;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+/*--------------SPLITTING THE PHOTO AND TEXT-----------------*/
+
+.split-left {
+	width: 50%;
+	padding-top: 100px;
+	float: left;
+	
+}
+.split-right {
+	width: 50%;
+	padding-top: 100px;
+	float: right;
+	/* text-align: left; */ /* TO MAKE TEXT ALIGNED TO THE LEFT */
+}
+/**************************************************/
+/* PLANT INTRODUCTION STYLESHEET END */
+/**************************************************/
