@@ -1,48 +1,22 @@
-html body {
-	margin: 0px;
-	padding: 0px;
+body{
+    margin: 0vw;
+    margin-top: 1vh;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    height: 94vh;
 }
-
-/*-----------SECTION THAT KEEPS EVERYTHING ALIGNED-----------*/
-
-.container {
-	overflow: hidden;
-	margin: 0px auto;
-	width: 75vw;
-}
-
-/*----------------------HEADER BAR---------------------------*/
+/*----------------------TOP NAV BAR---------------------------*/
 
 #header {
 	background: #ffffff;
-	position: relative;
-	padding: 3vw;
+	padding: 1vw;
 }
-
-/*-----------------LOGO AND WEBSITE TITLE--------------------*/
-
-#logo {
-	position: absolute;
-	top: 0.25vh;
-	left: 6vw;
-	font-family: 'Nunito Sans', sans-serif;
-	text-transform: uppercase;
-	color:#4C7149;
-	/* font-size: 16px; */
-}
-
-.logo-img {
-	position: absolute;
-	top: 3vh;
-	left: 2vw;
-}
-
 /*-------------------NAVIGATIONAL BAR------------------------*/
 
 #navbar {
-	position: absolute;
-	top: 2vh;
-	right: 2vw;
+    right: 2vw;
+    float: right;
+    padding-top: 1vw;
 }
 	
 #navbar ul {
@@ -61,7 +35,7 @@ html body {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: 'Nunito Sans', sans-serif;
-	font-size: 1.25vw;
+	font-size: 1.30vw;
 	color:#000000;
 	font-weight: 700;
 }
@@ -71,76 +45,124 @@ html body {
 	color: #4C7149;
 }
 
+/*-----------------LOGO AND WEBSITE TITLE--------------------*/
+
+.logo h1 {
+	font-family: 'Nunito Sans', sans-serif;
+	text-transform: uppercase;
+    color:#4C7149;
+    float: left;
+    font-size: 2.5vw;
+    padding-top: 0.10em;
+    padding-left: 0.5em;
+}
+
+.logo img{
+    float: left;
+    padding-top: 1em;
+    padding-left: 1vw;
+}
+
 /*-------------PLANT INTRODUCTION HEADER IMAGE---------------*/
 
 .header-image {
-	position: relative;
-	text-align: center;
+    background-image: url("introImages/filler.jpg");
+    width: auto;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
-/*-----------HEADER TEXT ONTOP OF THE HEADER IMAGE-----------*/
-
-.header-text {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: #ffffff;
+  .header-image h1 {
+    color: #ffffff;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 4vw;
+    font-size: 6vw; 
+    text-align: center;
+    padding: 10vw;
+  }
+
+h1{
+    font-size: 4vw;
+    text-transform: uppercase;
+    margin: 1vw;
+    text-align: center;
+    padding: 2vw;
 }
 
-/*------CONTENT ON THE LIGHT PAGES - TOOLS AND WATERING------*/
-
-#content-light {
-	padding: 10vw;
+/*-------------white section blocks---------------*/
+.white-block {
+    padding: 9vw;
 	text-align: left;
 	color: #000000;
 }
 
-#content-light h1 {
-	color: #000000;
-	font-family: 'Montserrat', sans-serif;
+.white-block h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+    text-align: left;
 }
 
-#content-light p {
-	color: #000000;
-	font-family: 'Nunito Sans', sans-serif;
+.white-block p{
+    font-family: 'Nunito Sans', sans-serif;
+    padding-left: 2vw;
 }
 
-/*--CONTENT ON THE DARK PAGES - GENERAL TIPS AND BEGINNER PLANTS--*/
+/*-------------dark section blocks---------------*/
 
-#content-dark {
-	overflow: hidden;
+.dark-block {
+    /* padding: 10vw; */
+    color: #ffffff;
 	padding: 10vw;
-	background: #012416;
-	text-align: right;
+    background-color: #012416;
+    /* overflow: hidden; */
 }
 
-#content-dark h1 {
-	color: #ffffff;
-	font-family: 'Montserrat', sans-serif;
-}
-
-#content-dark p {
-	color: #ffffff;
-	font-family: 'Nunito Sans', sans-serif;
-}
-
-/*--------------SPLITTING THE PHOTO AND TEXT-----------------*/
-
-.split-left {
-	width: 50%;
-	/* padding-top: 0vh; */
-	padding-right: 7vw;
-	float: left;
+.dark-block h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+    text-align: left;
+    padding-left: 0vw;
 
 }
 
-.split-right {
-	width: 50%;
-	/* padding-top: 0vh; */
-	padding-left: 7vw;
-	float: right;
-	text-align: left;
+.dark-block p{
+    font-family: 'Nunito Sans', sans-serif;
+    padding-right: 2vw;
 }
+
+
+/*-------------MAKES THE SCREEN RESPONSIVE---------------*/
+@media only screen and (min-width: 900px){
+
+    #layoutThree{
+        display: grid;
+        grid-template-areas: 
+        'A A B B'
+        ;
+    }
+
+} 
+
+@media only screen and (min-width: 600px) and (max-width: 900px){
+
+    #layoutThree{
+        display: grid;
+        grid-template-areas: 
+        'A A A'
+        'B B B'
+        ;
+    }
+
+} 
+
+@media only screen and (max-width: 600px){
+
+    #layoutThree{
+        display: grid;
+        grid-template-areas:
+        'A'
+        'B'
+        ;
+    }
+
+} 
