@@ -35,7 +35,7 @@ html body {
 }
 
 h3{
-  font-size: 50px;
+  font-size: 3vw;
   font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -282,7 +282,7 @@ background: #ffffff;
   grid-template-columns: 100%;
 }
 .img{
-  width: 50%;
+  height: 80%;
    }
 }
 
