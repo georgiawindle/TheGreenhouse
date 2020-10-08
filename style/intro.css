@@ -130,8 +130,6 @@ h1{
     padding-right: 2vw;
 }
 
-
-/*-------------MAKES THE SCREEN RESPONSIVE---------------*/
 @media only screen and (min-width: 900px){
 
     #layoutThree{
