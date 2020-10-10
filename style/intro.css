@@ -37,23 +37,23 @@ body{
 
 /*-------------------NAVIGATIONAL BAR------------------------*/
 
-#navbar {
+.navbar-links {
 	position: absolute;
 	top: 25px;
 	right: 20px;
 }
 	
-#navbar ul {
+.navbar-links ul {
 	display: inline-block;
 }
 	
-#navbar li {
+.navbar-links li {
 	display: block;
 	float: left;
 	text-align: center;
 }
 	
-#navbar li a {
+.navbar-links li a {
 	padding: 20px;
 	letter-spacing: 2px;
 	text-decoration: none;
@@ -64,7 +64,7 @@ body{
 	font-weight: 700;
 }
 	
-#navbar li:hover a {
+.navbar-links li:hover a {
     text-decoration: underline;
 	color: #4C7149;
 }
@@ -131,10 +131,9 @@ body{
 }
 
 
-
 @media only screen and (min-width: 1000px){
 
-    #layoutThree{
+    #layout {
         display: grid;
         grid-template-areas: 
         'A A B B'
@@ -142,21 +141,8 @@ body{
     }
 
 } 
-
-/* @media only screen and (min-width: 600px) and (max-width: 900px){
-
-    #layoutThree{
-        display: grid;
-        grid-template-areas: 
-        'A A A'
-        'B B B'
-        ;
-    }
-
-}  */
-
 @media only screen and (max-width: 600px){
-    #layoutThree{
+    #layout {
         display: grid;
         grid-template-areas:
         'A'
@@ -165,3 +151,57 @@ body{
     }
 
 } 
+
+/*-------------the hamburger display---------------*/
+
+.toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 10px;
+    
+}
+
+@media (max-width: 750px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
