@@ -1,21 +1,12 @@
-/**************************************************/
-/* PLANT INTRODUCTION STYLESHEET*/
-/**************************************************/
-
-html body {
-	margin: 0px;
-	padding: 0px;
+body{
+    margin: 0vw;
+    margin-top: 1vh;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    height: 94vh;
 }
 
-/*-----------SECTION THAT KEEPS EVERYTHING ALIGNED-----------*/
-
-.container {
-	overflow: hidden;
-	margin: 0px auto;
-	width: 1000px;
-}
-
-/*----------------------HEADER BAR---------------------------*/
+/*------------------------HEADER BAR--------------------------------*/
 
 #header {
 	background: #ffffff;
@@ -23,7 +14,7 @@ html body {
 	padding: 50px;
 }
 
-/*-----------------LOGO AND WEBSITE TITLE--------------------*/
+/*-------------------LOGO AND WEBSITE TITLE-------------------------*/
 
 #logo {
 	position: absolute;
@@ -32,34 +23,38 @@ html body {
 	font-family: 'Nunito Sans', sans-serif;
 	text-transform: uppercase;
 	color:#4C7149;
-	/* font-size: 16px; */
 }
 
-.logo-img {
+#logo h1 {
+    font-size: 30px;
+}
+
+.logo-img img{
 	position: absolute;
 	top: 22px;
-	left: 30px;
+    left: 30px;
+    width: 40px;
 }
 
-/*-------------------NAVIGATIONAL BAR------------------------*/
+/*-----------------------NAVIGATIONAL BAR---------------------------*/
 
-#navbar {
+.navbar-links {
 	position: absolute;
 	top: 25px;
 	right: 20px;
 }
 	
-#navbar ul {
+.navbar-links ul {
 	display: inline-block;
 }
 	
-#navbar li {
+.navbar-links li {
 	display: block;
 	float: left;
 	text-align: center;
 }
 	
-#navbar li a {
+.navbar-links li a {
 	padding: 20px;
 	letter-spacing: 2px;
 	text-decoration: none;
@@ -70,20 +65,19 @@ html body {
 	font-weight: 700;
 }
 	
-#navbar li:hover a {
-	background: #4C7149;
-	border-radius: 1px;
-	color: #000000;
+.navbar-links li:hover a {
+    text-decoration: underline;
+	color: #4C7149;
 }
 
-/*-------------PLANT INTRODUCTION HEADER IMAGE---------------*/
+/*----------------PLANT INTRODUCTION HEADER IMAGE-------------------*/
 
 .header-image {
 	position: relative;
 	text-align: center;
   }
 
-/*-----------HEADER TEXT ONTOP OF THE HEADER IMAGE-----------*/
+/*-------------------TEXT ONTOP OF HEADER IMAGE---------------------*/
 
 .header-text {
 	position: absolute;
@@ -92,60 +86,132 @@ html body {
 	transform: translate(-50%, -50%);
 	color: #ffffff;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 59px;
+	font-size: 4vw;
 }
 
-/*------CONTENT ON THE LIGHT PAGES - TOOLS AND WATERING------*/
+/*-------------WHITE SECTION - TOOLS AND WATERING-------------------*/
 
-#content-light {
-	padding: 70px;
+.white-block {
+    padding: 9vw;
 	text-align: left;
 	color: #000000;
 }
 
-#content-light h1 {
-	color: #000000;
-	font-family: 'Montserrat', sans-serif;
+.white-block h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    text-align: left;
+    padding-left: 2vw;
 }
 
-#content-light p {
-	color: #000000;
-	font-family: 'Nunito Sans', sans-serif;
+.white-block p{
+    font-family: 'Nunito Sans', sans-serif;
+    padding-left: 2vw;
 }
 
-/*--CONTENT ON THE DARK PAGES - GENERAL TIPS AND BEGINNER PLANTS--*/
+/*---------DARK SECTION - GENERAL TIPS AND BEGINNER PLANTS----------*/
 
-#content-dark {
-	overflow: hidden;
-	padding: 50px;
-	background: #012416;
-	text-align: right;
+.dark-block {
+    /* padding: 10vw; */
+    color: #ffffff;
+	padding: 10vw;
+    background-color: #012416;
+    /* overflow: hidden; */
 }
 
-#content-dark h1 {
-	color: #ffffff;
-	font-family: 'Montserrat', sans-serif;
+.dark-block h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    text-align: left;
+    padding-left: 0vw;
+
 }
 
-#content-dark p {
-	color: #ffffff;
-	font-family: 'Nunito Sans', sans-serif;
+.dark-block p{
+    font-family: 'Nunito Sans', sans-serif;
+    padding-right: 2vw;
 }
 
-/*--------------SPLITTING THE PHOTO AND TEXT-----------------*/
 
-.split-left {
-	width: 50%;
-	padding-top: 100px;
-	float: left;
-	
+@media only screen and (min-width: 1000px){
+
+    #layout {
+        display: grid;
+        grid-template-areas: 
+        'A A B B'
+        ;
+    }
+
+} 
+@media only screen and (max-width: 600px){
+    #layout {
+        display: grid;
+        grid-template-areas:
+        'A'
+        'B'
+        ;
+    }
+
+} 
+
+/*--------------------THE HAMBURGER DISPLAY-------------------------*/
+
+.toggle-button {
+    position: absolute;
+    z-index: 101;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
 }
-.split-right {
-	width: 50%;
-	padding-top: 100px;
-	float: right;
-	/* text-align: left; */ /* TO MAKE TEXT ALIGNED TO THE LEFT */
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 10px;
+    
 }
-/**************************************************/
-/* PLANT INTRODUCTION STYLESHEET END */
-/**************************************************/
+
+@media (max-width: 750px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        z-index: 70;
+        width: 80vw;
+        height: 100vh;
+        transform: translate(110%, 0);
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-links.active {
+        transform: translate(5%, 0);
+    }
+}

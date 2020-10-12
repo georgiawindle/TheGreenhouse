@@ -1,0 +1,180 @@
+html{
+	height: 100vh;
+	width: 100vw;
+
+}
+
+/* BODY - Background */
+body{
+    font-family: 'Nunito Sans';
+    font-size: 22px;
+    background-image: url(../images/landingImages/landingImage2.jpeg);
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+/* HEADER */
+h1{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 96px;
+	font-weight: 700;
+	color: white;
+}
+
+/* HEADER 2 */
+h2{
+	font-family: 'Nunito Sans';
+	font-size: 24px;
+}
+
+/* TITLE DIV - Holds the Title and About */
+.title{
+	position: absolute;
+	float: right;
+	top: 45vh;
+	left: 70vw;
+	transform: translate(-50%, -50%);
+}
+
+
+/* DESKTOP TITLE IMAGE */
+#title-image{
+	width: 600px;
+	margin: auto;
+}
+
+/* DESKTOP PAGE ABOUT */
+#page-about{
+	color: white;
+	margin: auto;
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+/* HOLD THE NAV BAR */
+.nav-container{
+		position: absolute;
+		width: 100vw;
+		top: 75vh;
+		left: 70vw;
+		margin: auto;
+		transform: translate(-50%, -50%);
+		
+}
+
+/* NAV BAR */
+nav{
+	 text-align: center;
+}
+
+/* LINK STYLE */
+a{
+	margin: 20px;
+	color: white;
+	text-decoration: none;
+	padding: 15px;
+	transition: 0.3s ease-out;
+	border-radius: 30px;
+	background-color: #E78336;
+	border: 2px solid #E78336;
+}
+
+/* LINK STYLE ON HOVER */
+a:hover{
+	margin: 20px;
+	color: #E78336;
+	text-decoration: none;
+	padding: 15px;
+	transition: 0.3s ease-out;
+	border-radius: 30px;
+	background-color: white;
+	border: 2px solid #E78336;
+}
+
+/* MOBILE ELEMENTS HIDDEN */
+.title-mobile{
+	display: none;
+}
+
+
+
+@media (max-width: 600px) {
+
+	/* DESKTOP ELEMENTS HIDDEN */
+	#title-image{
+		display: none;
+	}
+
+	#page-about{
+		display: none;
+	}
+
+	html{
+		height: 100vh;
+
+	}
+
+	/* MOBILE TITLE DISPLAY */
+	.title-mobile{
+		display: block;
+		padding-top: 20vh;
+		margin: 0;
+		
+	}
+
+	/* WIDTH OF LOGO */
+	#logo-mobile{
+		width: 10vw;
+		display: block;
+		margin: auto;
+	}
+
+	/* TEXT POSITION AND SIZE */
+	#page-title-mobile{
+		font-size: 52px;
+		text-align: center;
+	}
+
+	#page-about-mobile{
+		display: block;
+		color: white;
+		margin: auto;
+		width: 65vw;
+		text-align: center;
+		font-size: 18px;
+}
+
+	/* NAV CONTENT STACKED */
+	.nav-container{
+		padding-top: 30px;
+		width: 60vw;
+		top: 70vh;
+		left: 50vw;
+		transform: translate(-50%, -50%);
+		
+}
+
+	/* CHANGE SIZE OF LINKS */
+	a{
+		display: block;
+		font-size: 18px;
+		color: white;
+		text-decoration: none;
+		transition: 0.3s ease-out;
+		border-radius: 30px;
+		background-color: #E78336;
+		border: 2px solid #E78336;
+}
+
+	a:hover{
+		border-radius: 30px;
+		background-color: white;
+	}
+
+
+}
+
