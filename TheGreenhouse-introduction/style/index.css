@@ -2,15 +2,22 @@
 /* PLANT INTRODUCTION STYLESHEET*/
 /**************************************************/
 
-html body {
-	margin: 0px;
-	padding: 0px;
-}
+body{
+    margin: 0vw;
+    margin-top: 1vh;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    height: 94vh;
+}	
  p{
   font-size: 30px;
   text-align: left;
  }
 
+h3{
+  font-size: 60px;
+  font-family: 'Nunito Sans', sans-serif;
+}
 /*----------------------HEADER BAR---------------------------*/
 
 #header {
@@ -22,61 +29,121 @@ html body {
 /*-----------------LOGO AND WEBSITE TITLE--------------------*/
 
 #logo {
-	position: absolute;
-	top: 2px;
-	left: 80px;
-	font-family: 'Nunito Sans', sans-serif;
-	text-transform: uppercase;
-	color:#4C7149;
-	/* font-size: 16px; */
-}
-
-.logo-img {
-	position: absolute;
-	top: 22px;
-	left: 30px;
-}
-
-h3{
-  font-size: 60px;
+  position: absolute;
+  top: 2px;
+  left: 80px;
   font-family: 'Nunito Sans', sans-serif;
+  text-transform: uppercase;
+  color:#4C7149;
 }
+
+#logo h1 {
+    font-size: 30px;
+}
+
+.logo-img img{
+  position: absolute;
+  top: 22px;
+    left: 30px;
+    width: 40px;
+}
+
+
 
 /*-------------------NAVIGATIONAL BAR------------------------*/
 
-#navbar {
-	position: absolute;
-	top: 25px;
-	right: 20px;
+.navbar-links {
+  position: absolute;
+  top: 25px;
+  right: 20px;
 }
-	
-#navbar ul {
-	display: inline-block;
+  
+.navbar-links ul {
+  display: inline-block;
 }
-	
-#navbar li {
-	display: block;
-	float: left;
-	text-align: center;
+  
+.navbar-links li {
+  display: block;
+  float: left;
+  text-align: center;
 }
-	
-#navbar li a {
-	padding: 20px;
-	letter-spacing: 2px;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-family: 'Nunito Sans', sans-serif;
-	font-size: 18px;
-	color:#000000;
-	font-weight: 700;
+  
+.navbar-links li a {
+  padding: 20px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 18px;
+  color:#000000;
+  font-weight: 700;
 }
-	
-#navbar li:hover a {
-	background: #4C7149;
-	border-radius: 1px;
-	color: #000000;
+  
+.navbar-links li:hover a {
+    text-decoration: underline;
+  color: #4C7149;
+}
+/*--------------------THE HAMBURGER DISPLAY-------------------------*/
+
+.toggle-button {
+    position: absolute;
+    z-index: 101;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
 }
 
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 10px;
+    
+}
+
+@media (max-width: 750px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        z-index: 70;
+        width: 80vw;
+        height: 100vh;
+        transform: translate(110%, 0);
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-links.active {
+        transform: translate(5%, 0);
+    }
+}
 /*-------------PLANT INTRODUCTION HEADER IMAGE---------------*/
 
 .header-image {
@@ -93,16 +160,10 @@ h3{
 	transform: translate(-50%, -50%);
 	color: #ffffff;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 59px;
+	font-size: 4vw;
 }
 
-.header-index {
-	
-	color: #000000;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 59px;
-	margin-top: 100px;
-}
+
 
 /*------CONTENT ON THE LIGHT PAGES - TOOLS AND WATERING------*/
 
@@ -115,6 +176,11 @@ section{
 }
 
 
+.header-index{
+  font-size: 4vw;
+  font-family: 'Montserrat', sans-serif;
+}
+/*-----------------GIRD LAYOUT OF IMAGES---------------------*/
 
 .grid-container {
   display: grid;
@@ -139,6 +205,18 @@ background: #ffffff;
   padding: 10px;
 }
 
+.grid-container > div {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+}
+.grid-container1 > div {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+}
+
+/*-------------------GIRD LAYOUT OF MODAL---------------------*/
 
 .grid-container2 {
   display: grid;
@@ -154,16 +232,8 @@ background: #ffffff;
     text-align: center;
 }
 
-.grid-container > div {
-  text-align: center;
-  padding: 10px 0;
-  font-size: 30px;
-}
-.grid-container1 > div {
-  text-align: center;
-  padding: 10px 0;
-  font-size: 30px;
-}
+
+/*-------------------MODAL - BUTTON/LAYOUT---------------------*/
 
 .modal-button{
   background-color: #ffffff;
@@ -257,6 +327,8 @@ background: #ffffff;
 	/* text-align: left; */ /* TO MAKE TEXT ALIGNED TO THE LEFT */
 }
 
+
+/*---------RATIINGS FOR WATER/LIGHT/DIFFICULTY-------------*/
 .rating{
 	background-color: #72A367;
 	color: white;
@@ -268,6 +340,7 @@ background: #ffffff;
   padding-right: 30px;
 }
 
+/*-------------------RATING IMAGE SIZE---------------------*/
 .icon{
   width: 5%;
   float: right;
@@ -279,6 +352,9 @@ background: #ffffff;
   padding-top: 5vh;
    }
 
+
+
+/*-------------------SCREEN SIZES------------------*/
 @media screen and (max-width: 1000px) {
 .grid-container2 {
   grid-template-columns: 100%;
@@ -317,5 +393,5 @@ h3{
 
 }
 /**************************************************/
-/* PLANT INTRODUCTION STYLESHEET END */
+/* PLANT INDEX STYLESHEET END */
 /**************************************************/

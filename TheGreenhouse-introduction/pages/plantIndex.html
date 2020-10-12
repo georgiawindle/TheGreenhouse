@@ -10,20 +10,27 @@
 <body>
 	<!----------------HEADER AND NAVIGATIONAL BAR------------------>
 
-	<div id="header">
-		<div id="logo">
-			<h1>THE GREENHOUSE</h1>
-		</div>
-		<div class="logo-img">
-			<img src="images/logo.png" alt="" width="40" height="40"/>
-		</div>
-		<div id="navbar">
-			<ul>
-				<li><a href="introduction.html">INTRODUCTION</a></li>
-				<li><a href="plantIndex.html">PLANT INDEX</a></li>
-			</ul>
-		</div>
-	</div>
+<div id="header">
+      <div id="logo">
+        <h1>THE GREENHOUSE</h1>
+      </div>
+      <div class="logo-img">
+        <img src="images/logo.png" />
+      </div>
+      <div id="navbar">
+        <a href="#" class="toggle-button" onclick="toggleNav()">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="introduction.html">INTRODUCTION</a></li>
+            <li><a href="plantIndex.html">PLANT INDEX</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 	
 	<!-------------------------TITLE------------------------------->
 
@@ -356,9 +363,10 @@ Water this plant regularly, once the top of the soil is starting to dry out.
 </section>
 </center>
 
+<script src="../script/script.js"></script>
 
-
-<script type="text/javascript">
+<!--
+ <script type="text/javascript">
   // Get the button that opens the modal
 var btn = document.querySelectorAll("button.modal-button");
 
@@ -396,5 +404,6 @@ window.onclick = function(event) {
 }
 
 </script>
+-->
 </body>
 </html>
