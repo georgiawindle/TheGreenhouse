@@ -1,29 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie-edge">
-	<link rel="stylesheet" type="text/css" href="../style/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
-	<title>The Greenhouse - Introduction</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="../style/intro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Introduction</title>
+    
+    <script src="script/script.js"></script> <!--JavaScript Link-->
 </head>
 
 <body>
 
-	<h1> Introduction </h1>
+	<!----------------HEADER AND NAVIGATIONAL BAR------------------>
 
-	<nav> <!--Navigation Bar-->
-		<a href="../index.html">Landing Page</a>
-		<a href="introduction.html">Introduction</a>
-		<a href="plantIndex.html">Plant Index</a>
-	</nav>
+	<div id="header">
+		<div id="logo">
+			<h1>THE GREENHOUSE</h1>
+		</div>
+		<div class="logo-img">
+            <img src="introImages/logo.png"/>
+		</div>
+		<div id="navbar">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+			<ul>
+				<li><a href="introduction.html">INTRODUCTION</a></li>
+				<li><a href="plantIndex.html">PLANT INDEX</a></li>
+			</ul>
+        </div>
+    </div>
+	</div>
+	
+    <!---------------HEADER IMAGE AND HEADER TEXT------------------>
 
+	<div class="header-image">
+		<img src="introImages/header.jpg" style="width:100%;">
+		<div class="header-text">PLANT INTRODUCTION</div>
+	  </div>
 
+    <!----------------------TOOLS SECTION-------------------------->
+    
+    <section id="layout">
+        <div class="white-block A">
+            <h1>Tools</h1>	
+			<p>A watering can with a thin spout will be helpful when watering your plants indoors for minimal spillage.</p>
+			<p>A mister (pictured bottom left), is great for those plants that require higher humidity, a simple spray bottle with water will do the trick.</p>
+			<p>A set of pruners can also be useful for when your plants start to get too long to keep track of.</p>
+        </div>
+        <div class="white-block B">
+            <img src="introImages/tools.png" alt="" width="400" height="400"/>
+        </div>
+    </section>
 
+    <!-------------------GENERAL TIPS SECTION---------------------->
 
+        <section id="layout">
+            <div class="dark-block A">
+                <img src="introImages/generalTips.png" alt="" width="420" height="420"/>
+            </div>
+            <div class="dark-block B">
+                <h1>General Tips</h1>
+                <p>Don’t over water. It is possible to drown your plants so be sure to do some research, check out our Plant Index.<p>
+                <p>Make sure your pots have drainage holes.</p>	
+                <p>Not all plants need full sun, there’s plenty of low light options depending on your light sources.</p>
+            </div>
+        </section>
+    
+    <!----------------------WATERING SECTION-------------------------->
+    
+    <section id="layout">
+        <div class="white-block A">
+            <h1>Watering</h1>
+			<p> In general most houseplants require watering once of twice a week, however we recommened checking the specifications of your plant.</p>
+			<p>When watering it’s better a little dry than too wet, once the water starts to drip through the drainage holes, you’re good.</p>
+			<p>Your plants require less water in winter as a result of a slower growth rate.</p>
+        </div>
+        <div class="white-block B">
+            <img src="introImages/watering.png" alt="" width="400" height="600"/>
+        </div>
+    </section>
+    
+    <!-----------------BEGINNER PLANTS SECTION--------------------->
 
-<script src="script/script.js"></script> <!--JavaScript Link-->
+        <section id="layout">
+            <div class="dark-block A">
+                <img src="introImages/generalTips.png" alt="" width="420" height="420"/>
+            </div>
+            <div class="dark-block B">
+                <h1>Beginner Plants</h1>
+				<p>A Snake Plant is a staple beginner plant, requiring low light and can survive off a limited water supply.<p>
+				<p>Peperomias are a more exciting variety that produce stunning foliage while also requiring less frequent watering.</p>	
+				<p>A Spider Plant (pictured left) is an adaptable house plant and can grow in a wide range of conditions.</p>
+            </div>
+        </section>
 </body>
 </html>
