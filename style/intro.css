@@ -4,9 +4,14 @@ body{
     display: grid;
     grid-template-rows: 1fr 3fr;
     height: 94vh;
+    overflow-x: hidden;
 }
 p{
+<<<<<<< Updated upstream
   font-size: 30px;
+=======
+  font-size: 24px;
+>>>>>>> Stashed changes
   text-align: left;
  }
 /*------------------------HEADER BAR--------------------------------*/
@@ -86,6 +91,14 @@ p{
   font-family: 'Montserrat', sans-serif;
     margin-left: 30px;
 }
+<<<<<<< Updated upstream
+=======
+
+.header-indexD{
+  font-size: 4vw;
+  font-family: 'Montserrat', sans-serif;
+}
+>>>>>>> Stashed changes
 
 .header-text {
 	position: absolute;
@@ -100,14 +113,15 @@ p{
 /*-------------WHITE SECTION - TOOLS AND WATERING-------------------*/
 
 .white-block {
-    padding: 9vw;
+    padding: 5vw;
 	text-align: left;
 	color: #000000;
 }
 
 .white-block h1 {
+    padding-top: 10vw;
     font-family: 'Montserrat', sans-serif;
-    font-size: 35px;
+    font-size: 28px;
     text-align: left;
     padding-left: 2vw;
 }
@@ -122,16 +136,17 @@ p{
 .dark-block {
     /* padding: 10vw; */
     color: #ffffff;
-	padding: 10vw;
+	padding: 5vw;
+    text-align: left;
     background-color: #012416;
     /* overflow: hidden; */
 }
 
 .dark-block h1 {
+    padding-top: 10vw;
     font-family: 'Montserrat', sans-serif;
-    font-size: 35px;
+    font-size: 28px;
     text-align: left;
-    padding-left: 0vw;
 
 }
 
@@ -183,6 +198,8 @@ p{
     display: none;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 15px;
+    padding-right: 10px;
     width: 30px;
     height: 21px;
 }
@@ -220,17 +237,21 @@ p{
 
     .navbar-links ul {
         flex-direction: column;
+        padding-top: 20px;
+        padding: 10px;
     }
 
     .navbar-links li {
         text-align: center;
+        padding: 10px;
     }
 
     .navbar-links li a {
-        padding: 0.5rem 1rem;
+        padding: 10px;
     }
 
     .navbar-links.active {
-        transform: translate(5%, 0);
+        transform: translate(10%, 0);
+        width: 50vw;
     }
 }

@@ -8,11 +8,26 @@ body{
     display: grid;
     grid-template-rows: 1fr 3fr;
     height: 94vh;
+    overflow-x: hidden;
 }	
+
+
  p{
   font-size: 30px;
   text-align: left;
+
  }
+
+ .header-content{
+  width: 80vw;
+
+}
+
+.plant-content{
+  padding-left: 30px;
+  padding-right: 30px;
+
+}
 
 h3{
   font-size: 60px;
@@ -93,6 +108,8 @@ h3{
     display: none;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 15px;
+    padding-right: 10px;
     width: 30px;
     height: 21px;
 }
@@ -109,6 +126,7 @@ h3{
     .toggle-button {
         display: flex;
     }
+
 
     .navbar-links {
         position: absolute;
@@ -129,19 +147,23 @@ h3{
     }
 
     .navbar-links ul {
-        flex-direction: column;
+      padding-top: 20px;
+      padding: 10px;
+      flex-direction: column;
     }
 
     .navbar-links li {
         text-align: center;
+        padding: 10px;
     }
 
     .navbar-links li a {
-        padding: 0.5rem 1rem;
+        padding: 10px;
     }
 
     .navbar-links.active {
-        transform: translate(5%, 0);
+        transform: translate(10%, 0);
+        width: 50vw;
     }
 }
 /*-------------PLANT INTRODUCTION HEADER IMAGE---------------*/
@@ -177,6 +199,8 @@ section{
 
 
 .header-index{
+  text-align: left;
+  width: 80vw;
   font-size: 4vw;
   font-family: 'Montserrat', sans-serif;
 }
@@ -207,7 +231,7 @@ background: #ffffff;
 
 .grid-container > div {
   text-align: center;
-  padding: 10px 0;
+  padding: 10px;
   font-size: 30px;
 }
 .grid-container1 > div {
@@ -247,6 +271,7 @@ background: #ffffff;
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 5px; /* Location of the box */
+    padding-bottom: 5px;
     left: 0;
     top: 0;
     width: 100vw; /* Full width */
