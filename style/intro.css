@@ -5,7 +5,10 @@ body{
     grid-template-rows: 1fr 3fr;
     height: 94vh;
 }
-
+p{
+  font-size: 30px;
+  text-align: left;
+ }
 /*------------------------HEADER BAR--------------------------------*/
 
 #header {
@@ -78,6 +81,11 @@ body{
   }
 
 /*-------------------TEXT ONTOP OF HEADER IMAGE---------------------*/
+.header-index{
+  font-size: 4vw;
+  font-family: 'Montserrat', sans-serif;
+    margin-left: 30px;
+}
 
 .header-text {
 	position: absolute;
@@ -154,6 +162,17 @@ body{
 
 } 
 
+
+@media screen and (max-width: 1000px) {
+p{
+  font-size: 15px;
+}
+
+.header-index{
+ 
+    margin-left: 10px;
+}
+}
 /*--------------------THE HAMBURGER DISPLAY-------------------------*/
 
 .toggle-button {
